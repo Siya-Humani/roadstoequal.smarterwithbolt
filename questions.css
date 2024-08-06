@@ -1,8 +1,3 @@
-img {
-    width: 5%;
-    height: auto;
-    padding: 20px 10px 15px 20px;
-  }
 @font-face {
     font-family: 'Euclid Circular';
     src:url('/fonts/Euclid\ Circular\ A\ Bold.ttf') format('truetype');
@@ -15,9 +10,17 @@ img {
 body {
     font-family: 'Euclid Circular', sans-serif;
 }
+
+img {
+    width: 5%;
+    height: auto;
+    padding: 20px 10px 15px 20px;
+  }
+
 body {
     margin:0;
     padding:0;
+    font-family: 'Euclid Circular', sans-serif;
 }
 
 .block-container {
@@ -48,7 +51,7 @@ body {
     top: 50%;
     transform: translateY(-50%); 
     font-size: 38px;
-    font-weight: 600px;
+    font-weight: bold;
     align-items: center;
     margin: 0;
     width: 369px;
@@ -64,6 +67,7 @@ body {
     display: grid;
     place-items: center;
     font-size: 35px;
+    font-weight:light;
     cursor: pointer;
     text-align: center;
 }
@@ -76,6 +80,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-weight: medium;
     width: 423px;
     height: 385px;
     padding-top: 0;
@@ -93,6 +98,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-weight: medium;
     width: 423px;
     height: 385px;
     left: 1017px;
@@ -109,6 +115,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-weight: medium;
     width: 423px;
     height: 485px;
     top: 385px;
@@ -192,7 +199,6 @@ button:hover {
 
 .download-images img {
     width: 350px;
-    height: 250px;
     height: auto;
     border: 2px solid #ddd;
     border-radius: 8px;
@@ -214,3 +220,4 @@ button:hover {
 .block4 :hover {
     transform: scale(1.05);
 }
+
