@@ -42,6 +42,10 @@ function showResults() {
     document.getElementById('results').style.display = 'block';
 }
 
+function redirectToURL(url) {
+    window.location.href = url;
+}
+
 function getResultMessage(score) {
     let message = '';
     if (score === 5) {
