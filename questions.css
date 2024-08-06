@@ -80,6 +80,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-weight:bold;
     width: 423px;
     height: 385px;
     padding-top: 0;
@@ -97,6 +98,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-weight:bold;
     width: 423px;
     height: 385px;
     left: 1017px;
@@ -113,6 +115,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-weight:bold;
     width: 423px;
     height: 485px;
     top: 385px;
@@ -131,6 +134,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-weight:bold;
     width: 423px;
     height: 485px;
     top: 385px;
