@@ -9,6 +9,11 @@
 body {
     font-family: 'Euclid Circular', sans-serif;
 }
+.h3 {
+    align-items: center;
+    font-weight: medium;
+    justify-content: center;
+}
 
 img {
     width: 5%;
@@ -155,6 +160,7 @@ body {
 
 #try-again {
     margin: 50px;
+    justify-conten:center;
     margin-left: 600px;
     border: solid;
     width: 168px;
