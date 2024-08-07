@@ -222,4 +222,20 @@ button:hover {
 .block4 :hover {
     transform: scale(1.05);
 }
+@media (min-width: 768px) {
+    .block {
+        width: calc(50% - 20px); /* Two blocks per row with margin */
+        height: 200px; /* Adjusted for larger screens */
+        margin: 10px;
+    }
+
+    .quiz-question {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+}
 
