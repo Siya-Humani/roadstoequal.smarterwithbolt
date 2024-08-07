@@ -10,8 +10,9 @@ body {
     font-family: 'Euclid Circular', sans-serif;
 }
 
-.down {
+.h3 {
     text-align: center;
+    font-weight: medium;
     align-content: center;
     padding-bottom: 10px;
     padding-top:10px;
