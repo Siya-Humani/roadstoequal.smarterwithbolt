@@ -9,14 +9,11 @@
 body {
     font-family: 'Euclid Circular', sans-serif;
 }
-
-.h3 {
-    align-items: center;
-    font-weight: medium;
-    justify-content: center;
-    align-text: center;
-    margin:100px;
-}
+ h3 {
+    padding-top: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
 img {
     width: 5%;
