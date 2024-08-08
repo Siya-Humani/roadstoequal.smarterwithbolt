@@ -8,8 +8,8 @@ body {
     font-family: 'Euclid Circular', sans-serif;
 }
   .bolt {
-    width: 68px;
-    height: 40px;
+    width: 5%;
+    height: auto;
     padding: 20px 10px 15px 20px;
   }
   .main-image {
