@@ -8,9 +8,11 @@
 
 body {
     font-family: 'Euclid Circular', sans-serif;
+        background-color: white;
+        align-items: center;
 }
 
-img {
+.bolt {
     width: 5%;
     height: auto;
     padding: 20px 10px 15px 20px;
@@ -27,48 +29,47 @@ body {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-}
-.grid-container {
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .quiz-question {
     display: flex;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 50%);
-    align-content: right;
-    float: right;
-    background-color: white;
-}
-
-.heading {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%); 
-    font-size: 38px;
-    font-weight: medium;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin: 0;
-    width: 369px;
-    height: 112px;
-    top: 329px;
-    left: 68px;
-    gap: 0px;
-    opacity: 0px;
+}
+.grid-item {
+    align-items: center;
+    text-align: center;
+    width:50%;
+    padding: 0%;
+    text-align: center; 
+    color: white;
+    font-size: 25px; /* Optional: Adjust font size */
+    cursor: pointer; /* Change cursor on hover */
+    width: 100%;
+}
+.heading {
+    font-size: 28px;
+    font-weight: 500;
+    align-items: center;
+    padding: 23px;
+    justify-content: center;
+    padding: 23px;
 }
 
 .block1, .block2, .block3, .block4 {
     color: white;
-    display: grid;
-    place-items: center;
-    font-size: 35px;
-    font-weight:bold;
-    cursor: pointer;
+    flex: 50%;
+    width: 450px;
+    height: 485px;   
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    cursor: pointer;
+    padding-top: 23px 10px;
 }
 .block1 {
     background-color: #5B68F6;
@@ -222,4 +223,36 @@ button:hover {
 .block4 :hover {
     transform: scale(1.05);
 }
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+    .block1, .block2, .block3, .block4 {
+        height: 250px; /* Set the specific height you want for mobile screens */
+        text-align: center;
+    }
+    .bolt {
+        width: 68px;
+        height: auto;
+        padding-top: 24px;
+    }
+    .headline {
+        padding-left: 64px;
+        padding-top: 112px;
+        font-size: 26px;
+    }
+  }
+
+    /* Center the try-again button */
+    #try-again {
+        margin: 20px auto;
+    }
+
 
