@@ -1,53 +1,59 @@
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.bolt {
+  width: 5%;
+  height: auto;
+  padding: 20px 10px 15px 20px;
+}
+
 body {
-    background-color: white;
-    font-family: 'Euclid Circular', sans-serif;
+  font-family: 'Euclid Circular', sans-serif;
 }
-  .bolt {
-    width: 5%;
-    height: auto;
-    padding: 20px 10px 15px 20px;
-  }
-  .main-image {
-    padding-top: 40px;
-    width: 1440px;
-    height: 360px;
-  }
-   
-   headline {
-    height:192px;
-    width: 854px;
-   }
+       
+.custom-link {
+  color:black;
+  text-decoration: underline;
+}
 
-   h2.right {
-    font-weight: 600px;
-    height: 28px;
-    float: right;
-    color: #2F313F;
-    text-align: right;
-    font-size: 18px;
-    display: block;
-    margin-right: 10px;
-  }
+.custom-link:hover {
+  color: #27b973;
+  text-decoration: underline;
+}
+.main-image {
+  padding-top: 40px;
+  width: 1440px;
+  height: 360px;
+}
 
-  h1 {
-    color: #2F313F;
-    font-size: 48px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 80px;
-  }
+h2.right {
+ font-weight: bold;
+ height: 28px;
+ float: right;
+ color: #2F313F;
+ text-align: right;
+ font-size: 18px;
+ display: block;
+ margin-right: 10px;
+}
+
+h1 {
+  color: #2F313F;
+  font-size: 48px;
+  font-weight: 600px;
+  text-align: center;
+  padding-top: 80px;
+}
   
-  p {
-    font-size: 18px;
-    text-align: center;
-    font-weight: 400px;
-    line-height: 24px;
-  }
+p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 400px;
+}
   
  button {
     border: solid;
@@ -55,7 +61,7 @@ body {
     height: 48px;
     position: relative;
     color:white;
-    font-weight: 700px;
+    font-weight: light;
     background-color: #34D186;
     border-radius: 100px;
     padding: 12px, 24px, 52px, 24px;
@@ -63,15 +69,14 @@ body {
     font-size: 14px;
     cursor: pointer;
     text-align: center;
-  }
+}
 
   button:hover {
     background-color:white;
     color: #34BB78;
-    border: solid
-    weight 5px;
+    border: solid;
+    font-weight: 5px;
     border-color: #34BB78;
-
   }
 
   .container {
@@ -140,9 +145,15 @@ body {
   align-content: left;
   height: auto;
   display: inline;
-  padding-top: 0;
-  padding-inline-start: 0px;
 }
+.apps {
+  padding: 5px; /* Adjust the padding value as needed */
+}
+
+.apps img {
+  margin: 0 5px; /* Optional: adds horizontal spacing between icons */
+}
+
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
@@ -209,6 +220,24 @@ body {
 
   footer p.left {
       font-size: 0.7em;
+  }
+}
+/* Base styles to hide both images by default */
+.main-image {
+  display: none;
+}
+
+/* Display the desktop image on larger screens */
+@media (min-width: 768px) {
+  .desktop-image {
+      display: block;
+  }
+}
+
+/* Display the mobile image on smaller screens */
+@media (max-width: 767px) {
+  .mobile-image {
+      display: block;
   }
 }
 
