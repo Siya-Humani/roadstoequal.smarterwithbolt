@@ -2,11 +2,20 @@
     font-family: 'Euclid Circular';
     src:url('/fonts/Euclid\ Circular\ A\ Regular.ttf') format('truetype');
   }
+  * {
+    box-sizing: border-box;
+  }
 
 body {
     font-family: 'Euclid Circular', sans-serif;
         background-color: white;
         align-items: center;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 15%;
 }
 
 .bolt {
@@ -24,12 +33,14 @@ body {
     align-items: center;
 }
 
-.quiz-question {
+#quiz-question{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
+    width: 450px;
+    height: 485px;
+}  
 .grid-item {
     align-items: center;
     text-align: center;
@@ -53,15 +64,16 @@ body {
 .block1, .block2, .block3, .block4 {
     color: white;
     flex: 50%;
-    width: 450px;
-    height: 485px;   
     font-size: 28px;
     justify-content: center;
     align-items: center;
     text-align: center;
     cursor: pointer;
+    min-width: 450px;
+    min-height: 485px;
     padding-top: 23px 10px;
-}
+}  
+
 .block1 {
     background-color: #5b68f6; /* Blue */
     align-items: center;
@@ -69,6 +81,7 @@ body {
     justify-content: center;
     color: white;
     cursor: pointer;
+    transition: 0,2s;
 }
 
 .block2 {
@@ -102,6 +115,7 @@ body {
 .block1,.block2,.block3,.block4 {
     transform: scale(1.05);
 }
+
 img {
     width: 100%; /* Ensure images are responsive */
     height: auto;
@@ -141,7 +155,7 @@ img {
     transform: scale(1.1);
 }
 
-grid-item {
+.grid-item {
     size: 38px;
     color: white;
     cursor: pointer;
@@ -200,7 +214,7 @@ button:hover {
       flex-direction: column;
     }
     .block1, .block2, .block3, .block4 {
-        height: 250px; /* Set the specific height you want for mobile screens */
+        min-height: 250px; /* Set the specific height you want for mobile screens */
         text-align: center;
     }
     .bolt {
@@ -219,5 +233,4 @@ button:hover {
     #try-again {
         margin: 20px auto;
     }
-
 
