@@ -1,9 +1,6 @@
 @font-face {
     font-family: 'Euclid Circular';
-    src:url('/fonts/Euclid\ Circular\ A\ Medium.ttf') format('truetype');
     src:url('/fonts/Euclid\ Circular\ A\ Regular.ttf') format('truetype');
-    src:url('/fonts/Euclid\ Circular\ A\ Light.ttf') format('truetype');
-    src:url('/fonts/Euclid\ Circular\ A\ SemiBold.ttf') format('truetype');
   }
 
 body {
@@ -17,12 +14,6 @@ body {
     height: auto;
     padding: 20px 10px 15px 20px;
   }
-
-body {
-    margin:0;
-    padding:0;
-    font-family: 'Euclid Circular', sans-serif;
-}
 
 .block-container {
     width: 50%;
@@ -42,7 +33,7 @@ body {
 .grid-item {
     align-items: center;
     text-align: center;
-    width:50%;
+    width: 50%;
     padding: 0%;
     text-align: center; 
     color: white;
@@ -72,76 +63,49 @@ body {
     padding-top: 23px 10px;
 }
 .block1 {
-    background-color: #5B68F6;
-    position:absolute;
-    color: white;
-    display: grid;
-    align-content: right;
-    justify-content: center;
+    background-color: #5b68f6; /* Blue */
     align-items: center;
-    font-size: 35px;
-    font-weight:bold;
-    width: 423px;
-    height: 385px;
-    padding-top: 0;
-    left: 594px;
-    text-align: align;
+    text-align: center;
+    justify-content: center;
+    color: white;
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
 .block2 {
-    background-color: #EB4755;
-    position:absolute;
-    color: white;
-    display: grid;
-    justify-content: center;
+    background-color: #eb4755; /* Red */
     align-items: center;
-    font-size: 35px;
-    font-weight:medium;
-    width: 423px;
-    height: 385px;
-    left: 1017px;
     text-align: center;
+    justify-content: center;
+    color: white;
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
 .block3 {
-    background-color: #27B973;
-    position:absolute;
-    color: white;
-    display: grid;
-    justify-content: center;
+    background-color: #27b973; /* Green */
     align-items: center;
-    font-size: 35px;
-    font-weight:bold;
-    width: 423px;
-    height: 485px;
-    top: 385px;
-    left: 594px;
     text-align: center;
+    justify-content: center;
+    color: white;
     cursor: pointer;
-    transition: transform 0.3s ease;
+}
+
+.block4 {
+    background-color: #ff8800; /* Orange */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
 }
 
 
-.block4 {
-    background-color: #FF8800;
-    position:absolute;
-    color: white;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    font-weight:bold;
-    width: 423px;
-    height: 485px;
-    top: 385px;
-    left:1017px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.block1,.block2,.block3,.block4 {
+    transform: scale(1.05);
+}
+img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto;
+    padding: 20px 10px 15px 20px;
 }
 
 #results {
@@ -157,7 +121,7 @@ body {
 
 #try-again {
     margin: 50px;
-    justify-conten:center;
+    justify-content:center;
     margin-left: 600px;
     border: solid;
     width: 168px;
@@ -223,6 +187,7 @@ button:hover {
 .block4 :hover {
     transform: scale(1.05);
 }
+
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
     .column {
