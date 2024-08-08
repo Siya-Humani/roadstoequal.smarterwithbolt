@@ -20,7 +20,7 @@ function answerQuestion(questionNumber, isCorrect) {
     if (questionNumber < totalQuestions) {
         const nextQuestion = document.getElementById('question-' + (questionNumber + 1));
         if (nextQuestion) {
-            nextQuestion.style.display = 'block';
+            nextQuestion.style.display = 'flex';
         }
     } else {
         showResults();
@@ -40,10 +40,16 @@ function showResults() {
         resultElement.innerText = resultMessage;
     }
     document.getElementById('results').style.display = 'block';
-}
 
-function redirectToURL(url) {
-    window.location.href = url;
+     // Show or hide the "Share via Email" button based on score
+    const shareEmailButton = document.getElementById('share-email');
+    if (shareEmailButton) {
+    if (score >= 4) {
+        shareEmailButton.style.display = 'flex';
+    } else {
+        shareEmailButton.style.display = 'none';
+            }
+        }
 }
 
 function getResultMessage(score) {
@@ -68,5 +74,25 @@ function getResultMessage(score) {
         if (tryAgainButton) tryAgainButton.style.display = 'block';
     }
     return message;
+}
+
+function shareResults() {
+    const subject = encodeURIComponent("My Quiz Results");
+    const body = encodeURIComponent(`Hi there,
+
+I just completed the Women in Mobility quiz and here are my results:
+
+Score: ${score}/${totalQuestions}
+
+${getResultMessage(score)}
+
+Best regards,
+[Your Name]`);
+
+    // Create a mailto link
+    const mailtoLink = `mailto:womensday@roadtoequalsmarterwithbolt.com?subject=${subject}&body=${body}`;
+    
+    // Open the default email client
+    window.location.href = mailtoLink;
 }
 
