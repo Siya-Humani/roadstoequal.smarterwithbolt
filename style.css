@@ -9,8 +9,33 @@
   src: url('/fonts/Euclid Circular A Regular.ttf') format('truetype');
 }
 
+/* Regular weight */
+@font-face {
+  font-family: 'Euclid Circular';
+  src: url('/fonts/Euclid Circular A Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold weight */
+@font-face {
+  font-family: 'Euclid Circular';
+  src: url('/fonts/Euclid Circular A Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Italic style */
+@font-face {
+  font-family: 'Euclid Circular';
+  src: url('/fonts/Euclid Circular A Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
 .bolt {
-  width: 5%;
+  width: 12%;
   height: auto;
   padding: 20px 10px 15px 20px;
 }
@@ -32,7 +57,6 @@ body {
 .main-image {
   width: 100%;
   padding-top: 40px;
-  width: 1440px;
   height: auto;
   display: none;
 }
@@ -47,8 +71,9 @@ h1 {
 
 h2.right {
  font-weight: bold;
- height: 28px;
+ height: 45px;
  float: right;
+ padding: 20px 10px 15px 20px;
  color: #2F313F;
  text-align: right;
  font-size: 18px;
@@ -190,11 +215,6 @@ p.left {
 }
 
 @media (max-width: 480px) {
-  ul {
-      flex-direction: column;
-      align-items: center;
-  }
-
   .headline h1 {
       font-size: 1.8em;
   }
@@ -234,5 +254,4 @@ p.left {
       display: block;
   }
 }
-
 
