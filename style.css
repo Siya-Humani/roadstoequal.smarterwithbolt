@@ -184,6 +184,7 @@ p.left {
     }
       .bolt {
       width: 5%;
+      heigh: auto;
     }
   }
   /* Responsive styles */
