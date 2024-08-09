@@ -2,6 +2,29 @@
     font-family: 'Euclid Circular';
     src: url('/fonts/Euclid Circular A Regular.ttf') format('truetype');
 }
+/* Regular weight */
+@font-face {
+    font-family: 'Euclid Circular';
+    src: url('/fonts/Euclid Circular A Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Bold weight */
+  @font-face {
+    font-family: 'Euclid Circular';
+    src: url('/fonts/Euclid Circular A Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Italic style */
+  @font-face {
+    font-family: 'Euclid Circular';
+    src: url('/fonts/Euclid Circular A Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
 
 * {
     box-sizing: border-box;
@@ -20,7 +43,7 @@ h2 {
 }
 
 .bolt {
-    width: 5%;
+    width: 10%;
     height: auto;
     padding: 20px 10px 15px 20px;
 }
