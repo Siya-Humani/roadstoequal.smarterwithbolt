@@ -182,6 +182,9 @@ p.left {
     .column {
       width: 100%;
     }
+      .bolt {
+      width: 5%;
+    }
   }
   /* Responsive styles */
 @media (max-width: 768px) {
