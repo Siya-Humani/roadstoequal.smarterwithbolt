@@ -182,9 +182,9 @@ p.left {
     .column {
       width: 100%;
     }
-      .bolt {
-      width: 5%;
-      heigh: auto;
+  .bolt {
+        width: 68px;
+        padding-top: 24px;
     }
   }
   /* Responsive styles */
