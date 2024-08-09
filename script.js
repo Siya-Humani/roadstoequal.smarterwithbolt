@@ -42,7 +42,7 @@ function showResults() {
     document.getElementById('results').style.display = 'block';
 
     // Show or hide the "Try Again" button and "Download" link based on score
-    if (score >= 3) {
+    if (score >= 4) {
         if (downloadLink) downloadLink.style.display = 'block'; 
     } else {
         if (tryAgainButton) {
