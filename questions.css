@@ -196,7 +196,7 @@ button:hover {
         flex-direction: column;
     }
     .block1, .block2, .block3, .block4 {
-        min-height: 250px;
+        min-height: 200px;
         text-align: center;
     }
     .bolt {
