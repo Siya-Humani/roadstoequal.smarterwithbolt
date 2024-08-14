@@ -39,7 +39,7 @@ function showResults() {
     if (resultElement) {
         resultElement.innerText = resultMessage;
     }
-    document.getElementById('results').style.display = 'block';
+    document.getElementById('results').style.display = 'flex';
 
     // Show or hide the "Try Again" button and "Download" link based on score
     if (score >= 4) {
