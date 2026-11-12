@@ -48,7 +48,7 @@ function showResults() {
         if (tryAgainButton) {
             tryAgainButton.style.display = 'block';
             tryAgainButton.onclick = function() {
-                window.location.href = 'https://roadtoequalsmarterwithbolt.com'; // Replace with the actual URL to restart the quiz
+                window.location.href = 'https://siya-humani.github.io/roadstoequal.smarterwithbolt/'; // Replace with the actual URL to restart the quiz
             };
         }
     }
